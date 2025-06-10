@@ -1,0 +1,1 @@
+# structure-frontend-nuxt3-core
