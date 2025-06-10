@@ -1,0 +1,51 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve:dev": "nuxt dev --dotenv .env.dev",
+    "serve:stage": "nuxt dev --dotenv .env.stage",
+    "serve:prod": "nuxt dev --dotenv .env.prod",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "delete-files": "rm -f package-lock.json && rm -rf node_modules && rm -rf dist && rm -rf .nuxt",
+    "npm-cache-clean": "npm cache clean --force",
+    "npm-install": "npm i",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@js-joda/core": "^5.6.3",
+    "@pinia/nuxt": "^0.5.2",
+    "@vee-validate/nuxt": "^4.13.2",
+    "@vee-validate/yup": "^4.13.2",
+    "dayjs": "^1.11.13",
+    "dompurify": "^3.1.6",
+    "isomorphic-dompurify": "^2.14.0",
+    "nuxt": "^3.12.4",
+    "pinia": "^2.2.0",
+    "tsyringe": "^4.8.0",
+    "vee-validate": "^4.13.2",
+    "vue": "^3.4.34",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^3.14.1",
+    "@rushstack/eslint-patch": "^1.10.4",
+    "@testing-library/vue": "^8.1.0",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^8.57.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "happy-dom": "^14.12.3",
+    "playwright": "^1.46.1",
+    "playwright-core": "^1.46.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
